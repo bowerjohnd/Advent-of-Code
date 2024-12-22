@@ -2,7 +2,6 @@ good_total = 0
 safe_with_errors_total = 0
 bad_total = 0
 
-
 ######################
 ######################
 # Part 1 : success with minimal difficulty
@@ -11,6 +10,12 @@ bad_total = 0
 #		- separated validity check into it's own function
 #			- breaks messed up counts, keeping track of wrong data, cycle count incorrect
 #		- success after seeing printed results and correcting the above mentioned bugs
+######################
+######################
+
+######################
+######################
+# Check validity, determine asc/desc is consistent and gap between numbers is 1-3
 ######################
 ######################
 
@@ -58,11 +63,11 @@ def check_valid(line) :
 
 ######################
 ######################
-#
+# Open input file, readline and format into a list[]
 ######################
 ######################
 
-fin = open("input.txt", "rt")
+fin = open("AoC_2024_02_input.txt", "rt")
 
 while True :
 
