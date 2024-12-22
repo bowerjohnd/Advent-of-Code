@@ -10,8 +10,7 @@ bad_total = 0
 #		- separated validity check into it's own function
 #			- breaks messed up counts, keeping track of wrong data, cycle count incorrect
 #		- success after seeing printed results and correcting the above mentioned bugs
-######################
-######################
+
 
 ######################
 ######################
