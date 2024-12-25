@@ -253,9 +253,6 @@ diag_dl_count = 0
 diag_ur_count = 0
 diag_ul_count = 0
 
-row_check = 0
-col_check = 0
-
 #part 2
 ex1 = 0
 ex2 = 0
@@ -263,10 +260,8 @@ ex3 = 0
 ex4 = 0
 
 for i in range(len(xmas_list)) :
-	row_check += 1
 
 	for j in range(len(xmas_list)) :
-		col_check += 1
 
 		#
 		# horizontal forward
@@ -309,7 +304,6 @@ for i in range(len(xmas_list)) :
 		#
 		if i+3 < len(xmas_list) and j+3 < len(xmas_list) :
 			temp = xmas_list[i][j] + xmas_list[i+1][j+1] + xmas_list[i+2][j+2] + xmas_list[i+3][j+3]
-			#print(temp)
 			if temp == "XMAS" :
 				diag_dr_count += 1
 			if temp == "SAMX" :
@@ -343,8 +337,6 @@ for i in range(len(xmas_list)) :
 		if i+2 < len(xmas_list) and j+2 < len(xmas_list) :
 			temp_tl_br = xmas_list[i][j] + xmas_list[i+1][j+1] + xmas_list[i+2][j+2]
 			temp_tr_bl = xmas_list[i][j+2] + xmas_list[i+1][j+1] + xmas_list[i+2][j]
-			
-			# check for ex1
 
 			if temp_tl_br == "MAS" :
 				if temp_tr_bl == "MAS" :
